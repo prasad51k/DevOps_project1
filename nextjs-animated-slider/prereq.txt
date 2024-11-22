@@ -1,0 +1,29 @@
+Hi all!
+To run this project, we need to have the following pre-reqs:
+
+--> Step 1: Installation of NODE
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+source ~/.nvm/nvm.sh
+sudo yum install nodejs 
+
+--> Step 2: Check the versions
+npm --version
+node --version
+
+--> Step 3: Install next globally and locally
+npm install -g next
+Navigate to your local repo: check where have you cloned your project
+example: cd /home/ec2-user/<project-name>
+npm install next
+
+--> Step 4: Audit your dependencies/fix bugs
+npm audit
+npm audit fix --force (for finxing things forcefully)
+
+--> Step 5: Build and start the project
+npm run build && npm run start
+
+NOTE: check for the port number on which we can access the project.
+
+Happy Hosting!
